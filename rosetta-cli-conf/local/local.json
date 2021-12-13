@@ -1,0 +1,27 @@
+{
+ "network": {
+  "blockchain": "akash",
+  "network": "local"
+ },
+ "online_url": "http://localhost:8080",
+ "data_directory": "cli-data",
+ "http_timeout": 10,
+ "tip_delay": 300,
+  "construction": {
+      "stale_depth": 1000000,
+      "broadcast_limit": 5,
+      "constructor_dsl_file": "akash.ros",
+      "end_conditions": {
+          "transfer": 5
+      }
+  },
+ "data": {
+  "historical_balance_enabled": true,
+  "reconciliation_disabled": false,
+  "inactive_discrepancy_search_disabled": false,
+  "balance_tracking_disabled": false,
+  "end_conditions": {
+    "tip": true
+  }
+ }
+}
